@@ -1,5 +1,4 @@
-Implement create account for web and login  (v2.3)
+Implement Login and fix Home component  (v2.4)
 
 - What I do
-I used "createUserWithEmailAndPassword" and "signInWithEmailAndPassword"
-for using login API
+I used "onAuthStateChanged" to catch the difference of Auth

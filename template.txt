@@ -1,3 +1,5 @@
-Add Log_In page HTML, not really doing something (v2.1)
+Implement create account for web and login  (v2.3)
 
-- Why I do this
+- What I do
+I used "createUserWithEmailAndPassword" and "signInWithEmailAndPassword"
+for using login API

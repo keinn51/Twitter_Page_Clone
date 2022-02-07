@@ -1,4 +1,4 @@
-Add onSnapshot to check the changes of chats (v3.3)
+implement delete and update about chat data (v3.3)
 
-Using "query", "onSnapshot", "orderBy" to implement real-time chats.
+Using "deleteDoc", "updateDoc" to change my data.
 -

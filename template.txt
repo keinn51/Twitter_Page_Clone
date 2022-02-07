@@ -1,3 +1,4 @@
-Add getDocs to render the chat logs
+Add onSnapshot to check the changes of chats (v3.3)
 
+Using "query", "onSnapshot", "orderBy" to implement real-time chats.
 -

@@ -1,5 +1,1 @@
 Edit gitPush.sh to change the commit Author
-
-- What I do
-I used "GoogleAuthProvider" and "GithubAuthProvider" to use login service 
-with google and github login.

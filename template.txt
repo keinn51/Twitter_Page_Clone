@@ -1,4 +1,5 @@
-Implement Login and fix Home component  (v2.4)
+Edit gitPush.sh to change the commit Author
 
 - What I do
-I used "onAuthStateChanged" to catch the difference of Auth
+I used "GoogleAuthProvider" and "GithubAuthProvider" to use login service 
+with google and github login.

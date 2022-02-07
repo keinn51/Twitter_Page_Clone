@@ -1,1 +1,3 @@
-Edit gitPush.sh to change the commit Author
+Use firestore to implement database
+
+Using "firestore", "addDoc", "collection" to implement database

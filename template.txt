@@ -1,3 +1,4 @@
-Implement deleting files and update profile.js (v4.4 ~ 5.1)
+Implement updating profile by using data updating (v5.1)
 
+Just use "updateProfile" to update user's display name.
 -

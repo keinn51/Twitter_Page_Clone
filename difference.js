@@ -1,24 +1,8 @@
-
-const onChange = (event) => {
-    const {
-        target: { value },
-    } = event;
-    setNewDisplayName(value);
+const refreshUser = () => {
+    const user = authService.currentUser;
+    setUserObj({
+        displayName: user.displayName,
+        uid: user.uid,
+        updateProfile: () => updateProfile(user, { displayName: user.displayName }),
+    });
 };
-
-const onSubmit = async (event) => {
-    event.preventDefault();
-    if (userObj.displayName !== newDisplayName) {
-        await updateProfile(userObj, { displayName: newDisplayName });
-    }
-};
-
-<form onSubmit={onSubmit}>
-    <input
-        onChange={onChange}
-        type="text"
-        placeholder="Display name"
-        value={newDisplayName}
-    />
-    <input type="submit" value="Update Profile" />
-</form>

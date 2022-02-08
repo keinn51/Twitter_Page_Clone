@@ -1,4 +1,5 @@
-Implement updating profile by using data updating (v5.1)
+Fix the bug about rerendering when editting the profile  (v5.2)
 
-Just use "updateProfile" to update user's display name.
+Force rerendering when there's a change in Profile.
+Using refreshing function to update state of component.
 -

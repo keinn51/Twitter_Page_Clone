@@ -1,4 +1,4 @@
-Implement image loader part one (v4.0)
+Implement image loader part two (v4.1)
 
-Using "FileReader", "onloadend", "readAsDataURL".
+Just get the data using "readAsDataURL". 
 -

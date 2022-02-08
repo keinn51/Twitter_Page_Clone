@@ -1,4 +1,4 @@
-implement delete and update about chat data (v3.3)
+Implement image loader part one (v4.0)
 
-Using "deleteDoc", "updateDoc" to change my data.
+Using "FileReader", "onloadend", "readAsDataURL".
 -

@@ -1,14 +1,14 @@
-const onDeleteClick = async () => {
-    const ok = window.confirm("Are you sure you want to delete this nweet?");
-    if (ok) {
-        await deleteDoc(doc(dbService, "nweets", `${nweetObj.id}`));
-    }
+const onFileChange = (event) => {
+    const {
+        target: { files },
+    } = event;
+    const theFile = files[0];
+    const reader = new FileReader();
+    reader.onloadend = (finishedEvent) => {
+        console.log(finishedEvent);
+    };
+    reader.readAsDataURL(theFile);
 };
 
-const onSubmit = async (event) => {
-    event.preventDefault();
-    await updateDoc(doc(dbService, "nweets", `${nweetObj.id}`), {
-        text: newNweet,
-    })
-    setEditing(false);
-};
+<input type="file" accept="image/*" onChange={onFileChange} />
+

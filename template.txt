@@ -1,5 +1,3 @@
-Implement upload and get URL about Img (v4.2 ~ 4.3)
+Implement deleting files and update profile.js (v4.4 ~ 5.1)
 
-Using "uploadString", "getDownloadURL" to upload and get the Img data.
-Also edit Nweet.js for the Img upload.
 -

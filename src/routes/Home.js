@@ -15,12 +15,12 @@ import Nweet from "components/Nweet";
 const Home = ({ userObj }) => {
     const [nweet, setNweet] = useState("");
     const [nweets, setNweets] = useState([]);
-    const [attachment, setAttachment] = useState();
+    const [attachment, setAttachment] = useState("");
 
     const onSubmit = async (event) => {
         event.preventDefault();
         let attachmentUrl = "";
-        if (attachment != "") {
+        if (attachment !== "") {
             const fileRef = ref(storageService, `${userObj.uid}/${uuidv4()}`);
             const response = await uploadString(fileRef, attachment, "data_url");
             attachmentUrl = await getDownloadURL(fileRef);

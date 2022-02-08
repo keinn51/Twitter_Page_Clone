@@ -1,25 +1,14 @@
-
-const onSubmit = async (event) => {
-    event.preventDefault();
-    let attachmentUrl = "";
-    if (attachment != "") {
-        const fileRef = ref(storageService, `${userObj.uid}/${uuidv4()}`);
-        const response = await uploadString(fileRef, attachment, "data_url");
-        attachmentUrl = await getDownloadURL(fileRef);
-    }
-    const nweetObj = {
-        text: nweet,
-        createdAt: Date.now(),
-        creatorId: userObj.uid,
-        attachmentUrl,
-    };
-    await addDoc(collection(dbService, "nweets"), nweetObj);
-    setNweet("");
-    setAttachment("");
+const getMyNweets = async () => {
+    const q = query(
+        collection(dbService, "nweets"),
+        where("creatorId", "==", userObj.uid)
+    );
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach((doc) => {
+        console.log(doc.id, " => ", doc.data());
+    });
 };
 
-{
-nweetObj.attachmentUrl && (
-    <img src={nweetObj.attachmentUrl} width="50px" height="50px" />
-)
-}
+useEffect(() => {
+    getMyNweets();
+}, []);

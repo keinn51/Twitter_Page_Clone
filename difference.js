@@ -1,26 +1,25 @@
-const onFileChange = (event) => {
-    const {
-        target: { files },
-    } = event;
-    const theFile = files[0];
-    const reader = new FileReader();
-    reader.onloadend = (finishedEvent) => {
-        const {
-            currentTarget: { result },
-        } = finishedEvent;
-        console.log(finishedEvent.currentTarget)
-        setAttachment(result);
+
+const onSubmit = async (event) => {
+    event.preventDefault();
+    let attachmentUrl = "";
+    if (attachment != "") {
+        const fileRef = ref(storageService, `${userObj.uid}/${uuidv4()}`);
+        const response = await uploadString(fileRef, attachment, "data_url");
+        attachmentUrl = await getDownloadURL(fileRef);
+    }
+    const nweetObj = {
+        text: nweet,
+        createdAt: Date.now(),
+        creatorId: userObj.uid,
+        attachmentUrl,
     };
-    reader.readAsDataURL(theFile);
+    await addDoc(collection(dbService, "nweets"), nweetObj);
+    setNweet("");
+    setAttachment("");
 };
 
-<input type="file" accept="image/*" onChange={onFileChange} />
-    <input type="submit" value="Nweet" />
 {
-    attachment && (
-        <div>
-            <img src={attachment} width="100px" height="100px" />
-            <button onClick={onClearAttachment}>Clear</button>
-        </div>
-    )
+nweetObj.attachmentUrl && (
+    <img src={nweetObj.attachmentUrl} width="50px" height="50px" />
+)
 }

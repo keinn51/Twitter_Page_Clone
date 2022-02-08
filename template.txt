@@ -1,4 +1,5 @@
-Implement image loader part two (v4.1)
+Implement upload and get URL about Img (v4.2 ~ 4.3)
 
-Just get the data using "readAsDataURL". 
+Using "uploadString", "getDownloadURL" to upload and get the Img data.
+Also edit Nweet.js for the Img upload.
 -

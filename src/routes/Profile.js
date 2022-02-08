@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { collection, getDocs, query, where } from "@firebase/firestore";
 import { updateProfile } from "@firebase/auth";
 
-export default ({ refreshUser, userObj }) => {
+const Profile = ({ refreshUser, userObj }) => {
     const navigate = useNavigate();
     const [newDisplayName, setNewDisplayName] = useState(userObj.displayName);
 
@@ -58,3 +58,5 @@ export default ({ refreshUser, userObj }) => {
         </>
     );
 };
+
+export default Profile;

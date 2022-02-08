@@ -1,5 +1,5 @@
-Fix the bug about rerendering when editting the profile  (v5.2)
+Refactor the folder structure in Home.js and Auth.js  (v5.2)
 
-Force rerendering when there's a change in Profile.
-Using refreshing function to update state of component.
+Making NweetFactory for Home.js, It contains the chat logs.
+And make authForm.js for Auth.js to render the signup and login component.
 -

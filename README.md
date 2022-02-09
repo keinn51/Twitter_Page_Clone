@@ -48,7 +48,7 @@ This project includes
 
 ## 💡 Major Implement
 
-- [Move to wiki!]()
+- [Move to wiki!](https://github.com/keinn51/Twitter_Page_Clone/wiki#3-major-implement)
 
 ## 🤸‍ How To Use?
 

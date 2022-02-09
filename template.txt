@@ -1,5 +1,5 @@
-Refactor the folder structure in Home.js and Auth.js  (v5.2)
+Add CSS on project  (v6.1)
 
-Making NweetFactory for Home.js, It contains the chat logs.
-And make authForm.js for Auth.js to render the signup and login component.
+So many things are changed! ClassName is added almost div and form, input tag.
+Just check this commit!
 -

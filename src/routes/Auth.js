@@ -15,7 +15,6 @@ import {
 
 const Auth = () => {
 
-
   const onSocialClick = async (event) => {
     const name = event.target.name;
     let provider;
@@ -24,7 +23,6 @@ const Auth = () => {
     } else if (name === "github") {
       provider = new GithubAuthProvider();
     }
-    // console.log(provider);
     await signInWithPopup(authService, provider);
   };
 

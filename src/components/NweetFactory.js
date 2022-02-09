@@ -5,9 +5,6 @@ import { ref, uploadString, getDownloadURL } from "@firebase/storage";
 import {
     addDoc,
     collection,
-    onSnapshot,
-    query,
-    orderBy,
 } from "firebase/firestore";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";

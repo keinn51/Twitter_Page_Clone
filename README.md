@@ -1,13 +1,18 @@
 # Making Web App with React (Nomad Coder)
 
 <p align='center'>
-<img width="80%" alt="nweet_main" src="https://user-images.githubusercontent.com/79993356/153116224-d42205e7-6ba1-4c73-a1a9-90293ba73835.png">
+
+https://github.com/keinn51/Twitter_Page_Clone/assets/79993356/26e28e05-990e-4df2-a3be-0360009fc8d0
 
 </p>
 
 <p align='center'>
     <a href="https://keinn51.github.io/Twitter_Page_Clone">Published Webpage</a>
 </p>
+<p align='center'>
+        <span>firebase 과금 문제로 배포 페이지는 사용이 불가능합니다🥲</span>
+</p>
+
 
 ## 🛠 Using Skill
 
